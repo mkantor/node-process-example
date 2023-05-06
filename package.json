@@ -1,11 +1,23 @@
 {
-  "name": "",
+  "name": "vue-supabase",
+  "private": true,
   "version": "0.0.0",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "rm -rf dist && tsc --build && ./index.js"
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.21.0",
+    "@types/node": "^20.1.0",
+    "dotenv": "^16.0.3",
+    "vue": "^3.2.47"
   },
   "devDependencies": {
-    "typescript": "latest"
+    "@vitejs/plugin-vue": "^4.1.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vue-tsc": "^1.4.2"
   }
 }
